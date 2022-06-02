@@ -1,0 +1,80 @@
+.navbar {
+    display: none;
+}
+.sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4em 6em;
+    background: #5e1124;
+    height: 100%;
+    z-index: 1;
+}
+.sidenav > * {
+    margin: 4em 0;
+}
+.sidenav > .nav-item a {
+    color: #fefefe;
+}
+.sidenav-closed {
+    display: none;
+}
+.nav-item .press {
+    background: url('../resources/press_bg.png') no-repeat;
+    width: 130px;
+    height: 55px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 0.2em 0;
+    margin: 0 auto;
+}
+.nav-item .bio {
+    background: url('../resources/bio_bg.png') no-repeat;
+    width: 100px;
+    height: 81px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1em 0 1em 0.5em;
+    margin: 0 auto;
+}
+.nav-item .music {
+    background: url('../resources/music_bg.png') no-repeat;
+    width: 91px;
+    height: 91px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+.nav-item .videos {
+    background: url('../resources/video_bg.png') no-repeat;
+    width: 85px;
+    height: 94px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1.1em 0;
+    margin: 0 auto;
+}
+.nav-item .shop {
+    background: url('../resources/shop_bg.png') no-repeat;
+    width: 91px;
+    height: 85px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1.1em 0;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        padding: .19em;
+        background: url('../resources/glitter_bg.png') repeat;
+        color: #fff;
+        font-family: 'Water Brush', cursive;
+        font-size: 2em;
+        z-index: 0;
+    }
+    .navbar > * {
+        width: auto;
+    }
+}

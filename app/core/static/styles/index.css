@@ -1,0 +1,49 @@
+.content-top {
+    background: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2.png');
+    height: 65px;
+}
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.content-bottom {
+    background: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
+    height: 65px;
+}
+.press-content {
+    padding: 0 2em;
+    background: #fff;
+    flex-grow: 1;
+    min-height: 300px;
+}
+
+.sidebar {
+    margin-top: 2em;
+}
+#dog-pic-1 {
+    width: 250px;
+    height: 286px;
+    margin: 0 auto;
+    transform: rotate(-11deg);
+}
+#dog-pic-2 {
+    width: 250px;
+    height: 286px;
+    margin: 0 auto;
+    transform: rotate(9deg);
+}
+@media (min-width: 768px) {
+    .press-block {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-left: 1em;
+        justify-content: space-around;
+    }
+
+}

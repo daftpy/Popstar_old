@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="press-block block">
+    <div class="content-wrapper">
+      <div class="content-top">
+      </div>
+      <div class="press-content">
+        <h1 class="is-size-2">Press</h1>
+        <h2 class="is-size-4">Sample Headline</h2>
+        <p class="is-size-6">Work in progress</p>
+      </div>
+      <div class="content-bottom">
+      </div>
+    </div>
+    <div class="sidebar">
+      {% load static %}
+      <div id="dog-pic-1">
+        <img src="{% static 'resources/dog_pics/dog1.png' %}" />
+      </div>
+      <div id="dog-pic-2">
+        <img src="{% static 'resources/dog_pics/dog2.png' %}" />
+      </div>
+    </div>
+  </div>
+{% endblock %}

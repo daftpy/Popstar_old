@@ -1,0 +1,31 @@
+<div class="header-wrapper">
+  {% load static %}
+  <div class="brand-wrapper" class="block">
+    <div class="brand">
+        <a class="is-size-1" href="#">
+          Dog
+        </a>
+    </div>
+  </div>
+  <div class="mr-4 menu">
+    <a>
+      <img src="{% static 'resources/menu2.svg' %}" />
+    </a>
+  </div>
+  <script>
+    let menu = document.querySelector('.menu');
+    let sideNav = document.querySelector('.sidenav');
+    let visibility = false;
+    menu.addEventListener('click', (event) => {
+      if (visibility) {
+        sideNav.classList.add('sidenav-closed');
+        sideNav.classList.remove('sidenav');
+        visibility = false;
+      } else {
+        sideNav.classList.remove('sidenav-closed')
+        sideNav.classList.add('sidenav');
+        visibility = true;
+      }
+    });
+  </script>
+</div>

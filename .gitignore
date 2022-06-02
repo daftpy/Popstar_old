@@ -1,0 +1,18 @@
+# misc
+.vscode/
+
+# env and dependencies
+app/env/
+.env.dev
+.env.dev.db
+
+# db
+db.sqlite3
+
+# misc python
+__pycache__
+*.pyc
+
+# unnecessary static files
+app/static/admin/
+app/static/ckeditor/

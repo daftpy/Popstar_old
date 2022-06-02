@@ -1,0 +1,162 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Passion+One&family=Water+Brush&display=swap');
+html {
+    height: 100%;
+    background: url('../resources/maroon_bg.jpg');
+    background-repeat: repeat-y;
+}
+#main-content-wrapper {
+    font-family: 'Crete Round', serif;
+    height: 100vh;
+}
+
+#main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    background-image: url('../resources/tape_bg.png');
+    background-repeat: no-repeat;
+    resize: both;
+    font-family: 'Water Brush', cursive;
+    min-width: 364px;
+    min-height: 150px;
+    text-align: center;
+}
+.header-wrapper {
+    padding: 2.8em 0;
+    max-width: 364px;
+    transform: rotate(-9deg);
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-right: .65em;
+    margin-left: .65em;
+    padding: .19em;
+    background: url('../resources/glitter_bg.png') repeat;
+    color: #fff;
+    font-family: 'Water Brush', cursive;
+    font-size: 2em;
+}
+#press {
+    background: url('../resources/press_bg.png') no-repeat;
+    width: 130px;
+    height: 55px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 0.2em 0;
+    margin: 0 auto;
+}
+#bio {
+    background: url('../resources/bio_bg.png') no-repeat;
+    width: 100px;
+    height: 81px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1em 0 1em 0.5em;
+    margin: 0 auto;
+}
+#music {
+    background: url('../resources/music_bg.png') no-repeat;
+    width: 91px;
+    height: 91px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+#videos {
+    background: url('../resources/video_bg.png') no-repeat;
+    width: 85px;
+    height: 94px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1.1em 0;
+    margin: 0 auto;
+}
+#shop {
+    background: url('../resources/shop_bg.png') no-repeat;
+    width: 91px;
+    height: 85px;
+    flex-basis: 0 0 0 33.33%;
+    padding: 1.1em 0;
+    margin: 0 auto;
+}
+
+#content-top {
+    background: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2.png');
+    height: 65px;
+}
+#content-bottom {
+    background: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
+    height: 65px;
+}
+#content {
+    padding: 0 2em;
+    background: #fff;
+    height: 100%;
+    min-height: 300px; /*delete this */
+}
+
+#sidebar {
+    margin-top: 2em;
+}
+#dog-pic-1 {
+    width: 250px;
+    height: 286px;
+    margin: 0 auto;
+    transform: rotate(-11deg);
+}
+#dog-pic-2 {
+    width: 250px;
+    height: 286px;
+    margin: 0 auto;
+    transform: rotate(9deg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Passion One', cursive;
+}
+
+a {
+    color: #242424;
+}
+a:hover {
+    color: #3273DC;
+}
+
+@media (min-width: 461px) {
+    #navbar > * {
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) {
+    #navbar {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    #navbar > * {
+        width: auto;
+    }
+
+    #press-block {
+        display: flex;
+        margin: 0 2.5em;
+    }
+
+    #content-wrapper {
+        flex-grow: 1;
+        margin-right: 2em;
+    }
+    #sidebar {
+        margin-top: 0;
+        margin-left: 1em;
+    }
+
+}
